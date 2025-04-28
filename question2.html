@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sawal ka Jawab dein</title>
+  <style>
+    body {
+        height: 100vh;
+        width: 100%;
+        background-color: darkorange;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    const correctAnswer = "no";
+    const userAnswer = prompt("Koi Larki milny k baad bhi meRy sy piyaR rahy ga. Mujy bhool to nahi jayein gy na😂\nYes - bhool jayein gy to 🥹\nNo - nahi bhoolein gy to❤️");
+
+    if (userAnswer && userAnswer.toLowerCase().trim() === correctAnswer) {
+      window.location.href = "birthday.html";
+    } else if(userAnswer && userAnswer.toLowerCase().trim() === 'yes') {
+        window.location.href = "complain.html";
+    } else {
+      alert("Yes ya No kehna hai bass🤦‍♂");
+      location.reload();
+    }
+  </script>
+</body>
+</html>

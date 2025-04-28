@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>شکایت</title>
+  <style>
+    body {
+      background-color: darkorange;
+      font-family: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', serif;
+      color: #333;
+      text-align: center;
+      padding: 100px;
+    }
+
+    .sher {
+      background: #fff;
+      border: 1px solid #ccc;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      display: inline-block;
+      max-width: 600px;
+      font-size: 40px;
+      line-height: 2;
+      /* margin-bottom: 50px; */
+      margin: 10px;
+    }
+
+    /* Heart shape */
+    .heart {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      transform: rotate(-45deg);
+      margin: 0 auto;
+      animation: heartBreak 2s infinite ease-in-out;
+    }
+
+    .heart::before,
+    .heart::after {
+      content: '';
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      border-radius: 50%;
+    }
+
+    .heart::before {
+      top: -50px;
+      left: 0;
+    }
+
+    .heart::after {
+      left: 50px;
+      top: 0;
+    }
+
+    /* Animation to simulate cracking/breaking of heart */
+    @keyframes heartBreak {
+      0% {
+        transform: rotate(-45deg);
+      }
+      50% {
+        transform: rotate(-45deg) scale(1.2);
+      }
+      100% {
+        transform: rotate(-45deg) scale(1) rotate(15deg);
+      }
+    }
+
+  </style>
+</head>
+<body>
+    <div class="sher">
+        ہم تمہارے بغیر جینے کی<br> پہلی کوشش میں مر جائیں گے
+      </div>
+    <div class="sher">
+        کس طرح کر لیتے ہیں بے رُخیاں<br> دل نہیں دکھتا تمہارا      </div>
+      <audio id="birthday-audio" autoplay>
+        <source src="audio/complain-music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+  <div class="heart"></div>
+</body>
+</html>

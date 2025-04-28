@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sawal ka Jawab dein</title>
+  <style>
+    body {
+        height: 100vh;
+        width: 100%;
+        background-color: darkorange;
+    }
+  </style>
+</head>
+<body>
+
+    <div class="image-container">
+        <img src="images/walee-basement-auguest.jpg" alt="Birthday Image 2">
+        <img src="images/mabali-island-sir-jehanzaib.jpg" alt="Birthday Image 2">
+    </div>
+
+  <script>
+    const correctAnswer = "yes";
+    const userAnswer = prompt("MeRy sy piyaR kaRti hai ya nai?😁😂\nYes or No");
+
+    if (userAnswer && userAnswer.toLowerCase().trim() === correctAnswer) {
+      window.location.href = "question2.html"; // Redirect on correct answer
+    } else if(userAnswer && userAnswer.toLowerCase().trim() === 'no') {
+        alert("Soch lein again 1 moka hai yes keh dein😁");
+      location.reload(); // Page reloads after alert
+    } else {
+      alert("Yes ya No kehna hai bass🤦‍♂");
+      location.reload(); // Page reloads after alert
+    }
+  </script>
+</body>
+</html>
